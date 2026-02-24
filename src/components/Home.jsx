@@ -7,7 +7,7 @@ import MenuLateral from "./MenuLateral"
 
     return(
         <>
-            <main className="bg-amber-100 min-h-screen grid grid-cols-12">
+            <main className="bg-amber-100 min-h-screen grid grid-cols-12 ">
                 <MenuLateral/> {/* Ancho: 2 columnas*/ }
 
                 <div className="col-span-10">  {/* Ancho: 10 columnas*/ }
