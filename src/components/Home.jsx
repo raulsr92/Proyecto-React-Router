@@ -1,4 +1,8 @@
+import MiPerfil from "./homeSubComponents/MiPerfil"
+import ServiciosActivos from "./homeSubComponents/ServiciosActivos"
+
 import MenuLateral from "./MenuLateral"
+import {Route, Routes} from 'react-router-dom'
 
 
  const Home = ()=>{
@@ -11,8 +15,12 @@ import MenuLateral from "./MenuLateral"
                 <MenuLateral/> {/* Ancho: 2 columnas*/ }
 
                 <div className="col-span-10">  {/* Ancho: 10 columnas*/ }
+                    <Routes>
 
+                        <Route index element={<MiPerfil/>}/>
+                        <Route path="activos" element={<ServiciosActivos/>}/>
 
+                    </Routes>
                 </div>
             </main>        
         </>
